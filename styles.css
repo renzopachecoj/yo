@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/*----START MATERIAL ICONS-----*/
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+/*-----END MATERIAL ICONS-----*/
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --nav-background: #faff00;
+  --main-background: #000300;
+  --skills-background: #1e1e24;
+  --projects-background: #444140;
+  --contact-background: #f7ebe8;
+
+  --welcome-title-color: #faff00;
+  --welcome-subtitle-color: #02a9ea;
+
+  --h2-main-color: #faff00;
+  --h2-alt-color: #000300;
+  --h3-main-color: #02a9ea;
+  --h3-alt-color: #000300;
+  --h4-main-color: #000300;
+  --text-black: #1e1e24;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--nav-background);
+  font-size: 1.25rem;
+  position: fixed;
+  width: 100%;
+}
+
+#nav-links {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0rem;
+}
+
+#nav-links a {
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
+  padding: 1.25rem 1.25rem;
+}
+
+#nav-links a:hover {
+  font-weight: bold;
+}
+
+section {
+  padding: 3.75rem 0rem;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-background);
+  text-align: center;
+  padding: 0rem 0rem;
+  margin: 0rem;
+}
+
+#welcome-section h1 {
+  font-size: 5rem;
+  color: var(--welcome-title-color);
+  margin-bottom: 0.3125rem;
+}
+
+#welcome-section p {
+  font-size: 1.875rem;
+  color: var(--welcome-subtitle-color);
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--skills-background);
+  text-align: center;
+}
+
+#skills h2 {
+  color: var(--h2-main-color);
+}
+
+#skills-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.skills-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+}
+
+.skills-col ul {
+  list-style-type: none;
+  padding: 0rem;
+  height: 60%;
+}
+
+.skills-col h3 {
+  font-weight: 500;
+  color: var(--h3-main-color);
+  height: 20%;
+}
+
+.skill-icon {
+  height: 20%;
+  color: white;
+  font-size: 2.188rem;
+}
+
+.skills-col ul li {
+  font-weight: 300;
+  color: white;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  background-color: var(--projects-background);
+}
+
+#projects-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#projects h2 {
+  text-align: center;
+  color: var(--h2-main-color);
+}
+
+.project-tile {
+  width: 30%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.3125rem;
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project-tile a {
+  text-decoration: none;
+  color: var(--text-black);
+}
+.project-tile h3 {
+  color: var(--h3-alt-color);
+  font-weight: 500;
+  margin: 0 0 0.625rem 0;
+}
+
+.project-tile h4 {
+  color: var(--h4-main-color);
+  font-weight: 400;
+  margin: 0 0 0.625rem 0;
+}
+
+.project-tile p,
+.project-tile li {
+  color: var(--text-black);
+  font-weight: 300;
+}
+
+.project-tile ul {
+  list-style-type: none;
+  padding: 0rem;
+}
+
+.project-image {
+  height: auto;
+  width: 100%;
+  border-radius: 0.3125rem;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  background-color: var(--contact-background);
+}
+
+#contact h2 {
+  color: var(--h2-alt-color);
+  font-size: 3rem;
+}
+
+#socials ul {
+  list-style-type: none;
+  padding: 0rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#socials ul li a {
+  text-decoration: none;
+  color: var(--text-black);
+  font-weight: 300;
+  word-wrap: normal;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  width: 1.5rem;
+  height: auto;
+  margin-right: 0.3125rem;
+}
+
+@media (max-width: 800px) {
+  #navbar{
+    justify-content: center;
+  }
+}
+@media (max-width: 510px) {
+  #welcome-section {
+    padding: 3.75rem 0rem;
+  }
+}
+
+@media (max-width: 360px) {
+  #welcome-section h1{
+    font-size: 3rem
+  }
+  #welcome-section p{
+    font-size: 1rem
+  }
+}
+
+@media (max-width: 900px) {
+  .project-tile {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  #skills-grid {
+    flex-wrap: wrap;
+  }
+  .skills-col {
+    width: 45%;
+  }
+}
+
+@media (max-width: 450px) {
+  #nav-links a{
+    font-size: 1rem
+  }
+
+  .skills-col {
+    width: 100%;
+  }
+
+  #welcome-section{
+    padding-top: 0rem
+  }
+}
+
+
+@media (max-width: 400px) {
+  #nav-links a{
+    font-size: 0.8rem
+  }
+
+@media (max-width: 500px){
+  #socials ul {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #socials ul li{
+    margin-bottom: 0.625rem
+  }
+}
